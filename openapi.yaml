@@ -1,0 +1,20 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Addition API
+paths:
+  /add:
+    post:
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                num1:
+                  type: number
+                num2:
+                  type: number
+      responses:
+        '200':
+          description: addition result
